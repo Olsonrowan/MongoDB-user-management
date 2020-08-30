@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Students</title>
+</head>
+<body>
+    <h1>Student management</h1>
+    <div>
+        <a href="/getStudent"> show students</a>
+    <br>
+        <a href="/sortStudentAsc"> sort ascending alphabetically</a>
+    <br>
+        <a href="/sortStudentDesc">sort descending alphabetically</a>
+    </div>
+
+
+    <h1>Search Student</h1>
+    <div>
+        <form action="/searchStudents" method="post">
+            <label for="first_name"> Search by first or last name</label>
+            <input type="input" id="first_name" name="first_name">
+            <button type="submit">Search</button>
+        </form>
+        
+    </div>
+    <h1> add student</h1>
+
+    <div>
+        <form action="/addStudents" method="post">
+            <label for="first_name"> first name</label>
+            <input type="input" id="first_name" name="first_name">
+            <label for="last_name"> last name</label>
+            <input type="input" id="last_name" name="last_name">
+            <label for="email">email</label>
+            <input type="input" id="email" name="email">
+            <label for="age">age</label>
+            <input type="number" id="age" name="age">
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+    <h1> update student age</h1>
+    <div>
+        <form action="/updateStudent" method="post">
+            <label for="_id">ID of student to Update</label>
+            <input type="input" id="_id" name="_id">
+
+            <label for="first_name"> first name</label>
+            <input type="input" id="first_name" name="first_name">
+            
+            <label for="last_name"> last name</label>
+            <input type="input" id="last_name" name="last_name">
+
+            <label for="email"> email</label>
+            <input type="input" id="email" name="email">
+
+            <label for="age">age</label>
+            <input type="number" id="age" name="age">
+
+            
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+    <h1>delete student</h1>
+    <div>
+        <form action="/deleteStudent" method="post">
+            <label for="first_name">Delete by first name</label>
+            <input type="input" id="first_name" name="first_name">
+            
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+
+
+</body>
+</html>
